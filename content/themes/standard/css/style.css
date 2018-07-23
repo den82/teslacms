@@ -1,0 +1,457 @@
+.title {
+	margin:30px 0;
+}
+
+p {
+	font-size: 18px;
+}
+ul {
+	font-size: 18px;
+}
+.content {
+	padding-bottom:20px;
+}
+/* xs - устройства (до 576px) */
+/* CSS для ширины, которая меньше 575px (включительно) */
+ 
+@media (max-width: 575px) {
+	.header {
+		padding:20px;
+	}
+	.header-logo {
+		text-align:center;
+	}
+	.header-text {
+		text-align:center;
+		font-size: 16px;
+		margin: 25px 0 15px;
+	}
+	.header-phone {
+		text-align:center;
+		font-size:30px;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		color: #ffffff;
+	}
+	.nav-item {
+		font-size:19px;
+		margin-right:10px;
+	}
+	.developer {
+		margin-top:15px;
+		color:#ffffff;
+		font-size: 14px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.developer a {
+	  color:#ffffff;
+	  font-size: 14px;
+	  font-weight: 600;
+	}
+
+	/* Первый блок */
+	.footer-block1 {
+		padding:20px;
+		border: 0px solid green;
+	}
+	.footer-block1 p {
+		color:#ffffff;
+		font-size:14px;
+	}
+	.footer-block1 .footer-logo {
+		padding:20px 0;
+	}
+	.footer-block1 .copyright {
+		display:block;
+		color:#ffffff;
+		margin-top:10px;
+	}
+	
+	/* Второй блок */
+	.footer-block2 {
+		padding:0 0 0 20px;
+	}
+	.footer-block2 a {
+		color:#ffffff;
+		font-size:14px;
+	}
+	
+	/* Третий блок */
+	.footer-block3 {
+		padding:30px 0 0 20px;
+	}
+	.footer-block3 .footer-title {
+		color:#ffffff;
+		font-size:28px;
+		margin-bottom:9px;
+	}
+	.footer-block3 p {
+		color:#ffffff;
+		font-size:15px;
+	}
+	.footer-block3 .makeacall {
+		display:none;
+	}
+
+}
+/* sm-устройства (больше или равно 576px) */
+@media (min-width: 576px) {
+  /* CSS для: 576px <= ширины <= 767px */
+    .header {
+		padding:30px 15px;
+		border:0px dashed green;
+	}
+	.header-logo {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.header-text {
+		text-align:center;
+		font-size: 16px;
+		margin: 6px 0 0 0;
+	}
+	.header-phone {
+		margin-top: 20px;
+		text-align:center;
+		font-size:25px;
+		font-weight:600;
+		color:#212529;
+	}
+	.header-phone a {
+		color:#212529;
+		text-decoration:none;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		color: #ffffff;
+	}
+	.nav-item {
+		font-size:17px;
+		margin-right:20px;
+	}
+	.developer {
+		margin-top:15px;
+		color:#ffffff;
+		font-size: 14px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.developer a {
+	  color:#ffffff;
+	  font-size: 14px;
+	  font-weight: 600;
+	}
+
+	/* Первый блок */
+	.footer-block1 {
+		padding:20px;
+		border: 0px solid green;
+	}
+	.footer-block1 p {
+		color:#ffffff;
+		font-size:14px;
+	}
+	.footer-block1 .footer-logo {
+		padding:20px 0;
+	}
+	.footer-block1 .copyright {
+		display:block;
+		color:#ffffff;
+		margin-top:10px;
+	}
+	
+	/* Второй блок */
+	.footer-block2 {
+		padding:0 0 0 20px;
+	}
+	.footer-block2 a {
+		color:#ffffff;
+		font-size:14px;
+	}
+	
+	/* Третий блок */
+	.footer-block3 {
+		padding:30px 0 0 20px;
+	}
+	.footer-block3 .footer-title {
+		color:#ffffff;
+		font-size:28px;
+		margin-bottom:9px;
+	}
+	.footer-block3 p {
+		color:#ffffff;
+		font-size:15px;
+	}
+	.footer-block3 .makeacall {
+		display:none;
+	}
+}
+ 
+/* md-устройства (больше или равно 768px) */
+@media (min-width: 768px) {
+  /* CSS для: 768px <= ширины <= 991px */
+    .header {
+		padding:30px 15px;
+		border:0px dashed green;
+	}
+	.header-logo {
+		margin-bottom: 0;
+		text-align: left;
+	}
+
+	.header-text {
+		font-size: 18px;
+		text-align:center;
+		margin: 6px 0 0 0;
+	}
+	.header-phone {
+		margin-top: 10px;
+		text-align:right;
+		font-size:20px;
+		font-weight:600;
+		color:#212529;
+	}
+	.header-phone a {
+		color:#212529;
+		text-decoration:none;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		color: #ffffff;
+	}
+	.nav-item {
+		font-size:17px;
+		margin-right:20px;
+	}
+	.developer {
+		margin-top:15px;
+		color:#ffffff;
+		font-size: 14px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.developer a {
+	  color:#ffffff;
+	  font-size: 14px;
+	  font-weight: 600;
+	}
+
+	/* Первый блок */
+	.footer-block1 {
+		padding:20px;
+		border: 0px solid green;
+	}
+	.footer-block1 p {
+		color:#ffffff;
+		font-size:14px;
+	}
+	.footer-block1 .footer-logo {
+		padding:20px 0;
+	}
+	.footer-block1 .copyright {
+		display:block;
+		color:#ffffff;
+		margin-top:10px;
+	}
+	
+	/* Второй блок */
+	.footer-block2 {
+		padding:0 0 0 20px;
+	}
+	.footer-block2 a {
+		color:#ffffff;
+		font-size:14px;
+	}
+	
+	/* Третий блок */
+	.footer-block3 {
+		padding:30px 0 0 20px;
+	}
+	.footer-block3 .footer-title {
+		color:#ffffff;
+		font-size:28px;
+		margin-bottom:9px;
+	}
+	.footer-block3 p {
+		color:#ffffff;
+		font-size:15px;
+	}
+	.footer-block3 .makeacall {
+		display:none;
+	}
+}
+ 
+/* lg-устройства (больше или равно 992px) */
+@media (min-width: 992px) {
+  /* CSS для: 992px <= ширины <= 1119px */
+  /* CSS для: ширины >= 1200px */
+  .header {
+		padding:30px 15px;
+		border:0px dashed green;
+	}
+	.header-text {
+		font-size: 18px;
+		text-align:center;
+		margin: 6px 0 0 0;
+	}
+	.header-phone {
+		text-align:right;
+		font-size:25px;
+		font-weight:600;
+		color:#212529;
+	}
+	.header-phone a {
+		color:#212529;
+		text-decoration:none;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		color: #ffffff;
+	}
+	.nav-item {
+		font-size:17px;
+		margin-right:20px;
+	}
+	.developer {
+		margin-top:15px;
+		color:#ffffff;
+		font-size: 14px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.developer a {
+	  color:#ffffff;
+	  font-size: 14px;
+	  font-weight: 600;
+	}
+
+	/* Первый блок */
+	.footer-block1 {
+		padding:20px;
+		border: 0px solid green;
+	}
+	.footer-block1 p {
+		color:#ffffff;
+		font-size:14px;
+	}
+	.footer-block1 .footer-logo {
+		padding:20px 0;
+	}
+	.footer-block1 .copyright {
+		display:block;
+		color:#ffffff;
+		margin-top:10px;
+	}
+	
+	/* Второй блок */
+	.footer-block2 {
+		padding:30px 0 0 20px;
+	}
+	.footer-block2 a {
+		color:#ffffff;
+		font-size:14px;
+	}
+	
+	/* Третий блок */
+	.footer-block3 {
+		padding:30px 0 0 0;
+	}
+	.footer-block3 .footer-title {
+		color:#ffffff;
+		font-size:28px;
+		margin-bottom:9px;
+	}
+	.footer-block3 p {
+		color:#ffffff;
+		font-size:15px;
+	}
+	.footer-block3 .makeacall {
+		display:none;
+	}
+}
+ 
+/* xl-устройства (больше или равно 1200px) */
+@media (min-width: 1200px) {
+  /* CSS для: ширины >= 1200px */
+  .header {
+		padding:30px 15px;
+		border:0px dashed green;
+	}
+	.header-text {
+		font-size: 18px;
+		text-align:center;
+		margin: 6px 0 0 0;
+	}
+	.header-phone {
+		text-align:right;
+		font-size:25px;
+		font-weight:600;
+		color:#212529;
+	}
+	.header-phone a {
+		color:#212529;
+		text-decoration:none;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		color: #ffffff;
+	}
+	.nav-item {
+		font-size:17px;
+		margin-right:20px;
+	}
+	.developer {
+		margin-top:15px;
+		color:#ffffff;
+		font-size: 14px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.developer a {
+	  color:#ffffff;
+	  font-size: 14px;
+	  font-weight: 600;
+	}
+
+
+
+	/* Первый блок */
+	.footer-block1 {
+		padding:20px;
+	}
+	.footer-block1 p {
+		color:#ffffff;
+		font-size:14px;
+	}
+	.footer-block1 .footer-logo {
+		padding:20px 0;
+	}
+	.footer-block1 .copyright {
+		display:block;
+		color:#ffffff;
+		margin-top:10px;
+	}
+	
+	/* Второй блок */
+	.footer-block2 {
+		padding:30px 0 0 20px;
+	}
+	.footer-block2 a {
+		color:#ffffff;
+		font-size:14px;
+	}
+	
+	/* Третий блок */
+	.footer-block3 {
+		padding:30px 0 0 0;
+	}
+	.footer-block3 .footer-title {
+		color:#ffffff;
+		font-size:28px;
+		margin-bottom:9px;
+	}
+	.footer-block3 p {
+		color:#ffffff;
+		font-size:15px;
+	}
+	.footer-block3 .makeacall {
+		display:none;
+	}
+}
