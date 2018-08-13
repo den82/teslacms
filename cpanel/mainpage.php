@@ -150,7 +150,7 @@ if ($_SESSION['username']) {
                       display_edit_fp_products($conn, $product, $lang[$code], $code);
                     }
                     else if ($_GET['subtype'] == 'settings') {
-                      $settings = get_product_settings($conn);
+                      $settings = get_products_settings($conn);
                       display_settings_fp_products($conn, $settings, $lang[$code]);
                     }
                     else {

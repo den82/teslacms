@@ -13,7 +13,7 @@ function check_active_module($conn, $dir) {
 }
 
 // Display all modules
-function display_modules($conn, $modules, $lang) {
+function display_modules($conn, $modules, $lang, $code) {
 	echo "<div class='headline'><h1>".$lang['modules']."</h1></div>";
 
   $modules = scandir("../content/modules/");
@@ -39,7 +39,7 @@ function display_modules($conn, $modules, $lang) {
       ";
       foreach ($modules as $k=>$v) {
         //echo $v."<br>";
-        $names=file("../content/modules/".$v."/about.txt");
+        $names=file("../content/modules/".$v."/about_".$code.".txt");
 
         $module_name = substr($names[0], 14); 
         $module_date = date("d.m.Y", filectime("../content/modules/".$v."/"));

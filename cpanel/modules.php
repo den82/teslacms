@@ -108,7 +108,7 @@ if ($_SESSION['username']) {
                   echo "";
                 }
 
-                display_modules($conn, $modules, $lang[$code]);
+                display_modules($conn, $modules, $lang[$code], $code);
 
                 ?>
             </div>

@@ -1,5 +1,4 @@
-<?php
-// Database configuration 
+<?php 
 					return array(
 				  	'host'     => '',
 				    'username' => '',

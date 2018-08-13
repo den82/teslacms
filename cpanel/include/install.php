@@ -26,7 +26,7 @@ function make_install($host, $username, $dbname, $lang, $code) {
 				echo "<form method='post' action='cpanel/include/action.php'>";
 				echo "
 				<input type='hidden' name='mode' value='install'>
-				<input type='hidden' name='lang' value='".$code."'>
+				<input type='hidden' name='code' value='".$code."'>
 				<div class='form-group'>
 					<label><b>".$lang['Server name']."</b></label>
 					<input type='text' name='host' class='form-control' id='exampleFormControlInput1' value='".$host."'>
@@ -63,9 +63,9 @@ function make_install($host, $username, $dbname, $lang, $code) {
 }
 
 // Import tables in database
-function import_tables($conn, $lang) {
+function import_tables($conn, $code) {
 	// Russian version
-	if ($lang == 'ru') {
+	if ($code == 'ru') {
 		$sql1 = "
 		CREATE TABLE IF NOT EXISTS cms_admin (
 		  id int(3) unsigned NOT NULL auto_increment,
@@ -508,7 +508,7 @@ function import_tables($conn, $lang) {
 
 
 	// English version
-	if ($lang == 'en') {
+	if ($code == 'en') {
 		$sql1 = "
 		CREATE TABLE IF NOT EXISTS cms_admin (
 		  id int(3) unsigned NOT NULL auto_increment,

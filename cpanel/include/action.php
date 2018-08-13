@@ -21,6 +21,8 @@ else {
   $code = 'ru';
 }
 
+
+
 // Intallation TeslaCMS
 if ($_POST['mode'] == 'install') {
 	/*
@@ -30,7 +32,7 @@ if ($_POST['mode'] == 'install') {
 	$dbname = mysqli_real_escape_string($conn, $_POST['dbname']);
 	*/
 
-	$lang = $_POST['lang'];
+	$code = $_POST['code'];
 	$host = $_POST['host'];
 	$username = $_POST['username'];
 	$password = $_POST['password'];
@@ -67,13 +69,14 @@ if ($_POST['mode'] == 'install') {
 		    //exit;
 		}
 
-		if (import_tables($conn, $lang) == true) {
-			update_logs($conn, $_SESSION['username'], $lang[$code]['001'], $_SERVER['REMOTE_ADDR'], $_SERVER["HTTP_USER_AGENT"]);
+
+		if (import_tables($conn, $code) == true) {
+			update_logs($conn, 'admin', $lang[$code]['001'], $_SERVER['REMOTE_ADDR'], $_SERVER["HTTP_USER_AGENT"]);
 			header("Location: ../?result=success");
 			exit();
 		}
 		else {
-			update_logs($conn, $_SESSION['username'], $lang[$code]['002'], $_SERVER['REMOTE_ADDR'], $_SERVER["HTTP_USER_AGENT"]);
+			update_logs($conn, '', $lang[$code]['002'], $_SERVER['REMOTE_ADDR'], $_SERVER["HTTP_USER_AGENT"]);
 			header("Location: ../../?result=failed&host=".$host."&username=".$username."&dbname=".$dbname);
 			exit();
 		}

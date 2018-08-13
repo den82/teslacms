@@ -254,7 +254,7 @@
  		"073" => "Free section on the main page was edited",
  		"074" => "Unsuccessful attempt to edit free section on the main page",
  		"075" => "Products/services settings were updated",
- 		"076" => "Unsuccessful attempt to update Products/services settings",
+ 		"076" => "Unsuccessful attempt to update Products/services settings"
  	), 
     "ru" => array(
     	"installed" => "TeslaCMS успешно установлена", 

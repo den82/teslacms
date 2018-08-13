@@ -1,0 +1,11 @@
+Module: Order form
+---
+Developer: TeslaCMS
+---
+Сайт: https://teslacms.ru
+---
+Last update: 23.07.2018
+---
+Description: Simple order form with 4 fields: name, email, phone, order. Bots protection - reCAPTCHA. It requires key to set up reCAPTCHA. Script sends data from form to email you added in module settings in recipient field.
+<p>
+<strong>Version:</strong> 1.0
